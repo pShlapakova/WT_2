@@ -1,0 +1,42 @@
+2019-12-17 19:29:23,115 INFO Main [main] Start...
+2019-12-17 19:29:23,393 INFO ser.ValidatorXSD [main] Is valid
+2019-12-17 19:29:23,417 INFO ser.ParserSAX [main] Start parsing...
+2019-12-17 19:29:23,440 INFO ser.ParserSAX [main] Finish parsing
+2019-12-17 19:29:23,444 INFO ser.TransferService [main] Get transfer service
+2019-12-17 19:29:23,446 ERROR Main [main] com.mysql.jdbc.Driver
+2019-12-17 19:47:37,453 INFO Main [main] Start...
+2019-12-17 19:47:37,710 INFO ser.ValidatorXSD [main] Is valid
+2019-12-17 19:47:37,739 INFO ser.ParserSAX [main] Start parsing...
+2019-12-17 19:47:37,767 INFO ser.ParserSAX [main] Finish parsing
+2019-12-17 19:47:37,773 INFO ser.TransferService [main] Get transfer service
+2019-12-17 19:47:37,789 ERROR Main [main] No suitable driver found for jdbc:mysql://localhost/park?useTimezone=true&serverTimezone=UTC
+2019-12-17 20:35:53,253 INFO Main [main] Start...
+2019-12-17 20:35:53,765 INFO ser.ValidatorXSD [main] Is valid
+2019-12-17 20:35:53,852 INFO ser.ParserSAX [main] Start parsing...
+2019-12-17 20:35:54,112 INFO ser.ParserSAX [main] Finish parsing
+2019-12-17 20:35:54,121 INFO ser.TransferService [main] Get transfer service
+2019-12-17 20:35:54,126 ERROR Main [main] com.mysql.jdbc.Driver
+2019-12-17 22:13:59,751 INFO Main [main] Start...
+2019-12-17 22:14:00,042 INFO ser.ValidatorXSD [main] Is valid
+2019-12-17 22:14:00,078 INFO ser.ParserSAX [main] Start parsing...
+2019-12-17 22:14:00,107 INFO ser.ParserSAX [main] Finish parsing
+2019-12-17 22:14:00,114 INFO ser.TransferService [main] Get transfer service
+2019-12-17 22:14:00,121 ERROR Main [main] com.MySQL.jdbc.Driver
+2019-12-17 22:16:34,649 INFO Main [main] Start...
+2019-12-17 22:16:35,078 INFO ser.ValidatorXSD [main] Is valid
+2019-12-17 22:16:35,103 INFO ser.ParserSAX [main] Start parsing...
+2019-12-17 22:16:35,137 INFO ser.ParserSAX [main] Finish parsing
+2019-12-17 22:16:35,146 INFO ser.TransferService [main] Get transfer service
+2019-12-17 22:16:38,902 ERROR ser.TransferService [main] Incorrect integer value: 'WATER' for column 'visitors_love' at row 1
+2019-12-17 22:16:38,909 ERROR ser.TransferService [main] Incorrect integer value: 'ROLLER_COASTER' for column 'visitors_love' at row 1
+2019-12-17 22:16:38,926 ERROR ser.TransferService [main] Incorrect integer value: 'Take a photo' for column 'price' at row 1
+2019-12-17 22:16:38,932 ERROR ser.TransferService [main] Incorrect integer value: 'Shoot at targets' for column 'price' at row 1
+2019-12-17 22:28:59,265 INFO Main [main] Start...
+2019-12-17 22:28:59,529 INFO ser.ValidatorXSD [main] Is valid
+2019-12-17 22:28:59,552 INFO ser.ParserSAX [main] Start parsing...
+2019-12-17 22:28:59,589 INFO ser.ParserSAX [main] Finish parsing
+2019-12-17 22:28:59,598 INFO ser.TransferService [main] Get transfer service
+2019-12-17 22:29:01,461 ERROR ser.TransferService [main] Entity with id=1 is already exists at table "territory".
+2019-12-17 22:29:01,464 ERROR ser.TransferService [main] Entity with id=2 is already exists at table "territory".
+2019-12-17 22:29:01,467 ERROR ser.TransferService [main] Entity with id=3 is already exists at table "territory".
+2019-12-17 22:29:01,470 ERROR ser.TransferService [main] Entity with id=4 is already exists at table "territory".

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="amusementPark">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="territories">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="territory" minOccurs="0" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="x">
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:int">
+                                                    <xsd:minInclusive value="0"/>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+                                        <xsd:element name="y">
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:int">
+                                                    <xsd:minInclusive value="0"/>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+                                        <xsd:element name="width">
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:int">
+                                                    <xsd:minInclusive value="0"/>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+                                        <xsd:element name="height">
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:int">
+                                                    <xsd:minInclusive value="0"/>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                    <xsd:attribute name="id" type="xsd:int" use="required"/>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="attractions">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="attraction" minOccurs="0" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="name" type="xsd:string"/>
+                                        <xsd:element name="buildPrice">
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:int">
+                                                    <xsd:minInclusive value="0"/>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+                                        <xsd:element name="rideTime">
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:long">
+                                                    <xsd:minInclusive value="0"/>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+                                        <xsd:element name="territoryId" type="xsd:int"/>
+                                        <xsd:element name="ticketPrice">
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:int">
+                                                    <xsd:minInclusive value="0"/>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+                                        <xsd:element name="timeToRepair" type="xsd:long"/>
+                                        <xsd:element name="type" type="AttractionType"/>
+                                        <xsd:element name="visitorsLove">
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:byte">
+                                                    <xsd:minInclusive value="0"/>
+                                                    <xsd:maxInclusive value="100"/>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                    <xsd:attribute name="id" type="xsd:int" use="required"/>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="serviceBuildings">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="serviceBuilding" minOccurs="0" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="name" type="xsd:string"/>
+                                        <xsd:element name="buildPrice">
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:int">
+                                                    <xsd:minInclusive value="0"/>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+                                        <xsd:element name="territoryId" type="xsd:int"/>
+                                        <xsd:element name="price">
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:int">
+                                                    <xsd:minInclusive value="0"/>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+                                        <xsd:element name="timeToRepair" type="xsd:long"/>
+                                        <xsd:element name="service" type="xsd:string"/>
+                                    </xsd:sequence>
+                                    <xsd:attribute name="id" type="xsd:int" use="required"/>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:simpleType name="AttractionType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="CAROUSEL"/>
+            <xsd:enumeration value="INFLATABLE"/>
+            <xsd:enumeration value="ROPE"/>
+            <xsd:enumeration value="WATER"/>
+            <xsd:enumeration value="RACE_TRACKS"/>
+            <xsd:enumeration value="ROLLER_COASTER"/>
+            <xsd:enumeration value="DANGEROUS"/>
+            <xsd:enumeration value="KID"/>
+            <xsd:enumeration value="NO_TYPE"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:schema>

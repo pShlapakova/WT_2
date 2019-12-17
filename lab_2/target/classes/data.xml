@@ -1,0 +1,68 @@
+<amusementPark>
+    <territories>
+        <territory id="1">
+            <x>5</x>
+            <y>16</y>
+            <width>85</width>
+            <height>35</height>
+        </territory>
+        <territory id="2">
+            <x>55</x>
+            <y>45</y>
+            <width>74</width>
+            <height>13</height>
+        </territory>
+        <territory id="3">
+            <x>89</x>
+            <y>116</y>
+            <width>34</width>
+            <height>56</height>
+        </territory>
+        <territory id="4">
+            <x>795</x>
+            <y>2</y>
+            <width>78</width>
+            <height>56</height>
+        </territory>
+    </territories>
+    <attractions>
+        <attraction id="1">
+            <name>ParamPampam</name>
+            <buildPrice>45000</buildPrice>
+            <rideTime>8784564</rideTime>
+            <territoryId>1</territoryId>
+            <ticketPrice>450</ticketPrice>
+            <timeToRepair>7845153135</timeToRepair>
+            <type>WATER</type>
+            <visitorsLove>78</visitorsLove>
+        </attraction>
+        <attraction id="2">
+            <name>LunaRoll</name>
+            <buildPrice>78000</buildPrice>
+            <rideTime>785645</rideTime>
+            <territoryId>2</territoryId>
+            <ticketPrice>780</ticketPrice>
+            <timeToRepair>31353531351</timeToRepair>
+            <type>ROLLER_COASTER</type>
+            <visitorsLove>89</visitorsLove>
+        </attraction>
+    </attractions>
+    <serviceBuildings>
+        <serviceBuilding id="1">
+            <name>PhotoBox</name>
+            <buildPrice>16000</buildPrice>
+            <territoryId>3</territoryId>
+            <price>160</price>
+            <timeToRepair>4595656156</timeToRepair>
+            <service>Take a photo</service>
+        </serviceBuilding>
+        <serviceBuilding id="2">
+            <name>ShootingGallery</name>
+            <buildPrice>43000</buildPrice>
+            <territoryId>4</territoryId>
+            <price>80</price>
+            <timeToRepair>1615656564</timeToRepair>
+            <service>Shoot at targets</service>
+        </serviceBuilding>
+    </serviceBuildings>
+</amusementPark>
